@@ -1,0 +1,6 @@
+#!/bin/bash
+
+JYTHON=$HOME/bin/jython
+CLASSPATH=/home/ganon/Downloads/jforex/libs/*
+
+$JYTHON -J-classpath "$CLASSPATH" $@
