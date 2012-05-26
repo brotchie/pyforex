@@ -1,3 +1,10 @@
+/**
+ * JForex strategy to proxy calls to a Jython module
+ * that contains a Strategy class implementing the
+ * IStrategy interface.
+ *
+ */
+
 package jforex;
 
 import java.util.*;

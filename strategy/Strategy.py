@@ -1,3 +1,9 @@
+"""
+Exapmle strategy script for the JForex Jython
+strategy interface.
+
+"""
+
 from com.dukascopy.api import IStrategy, Instrument
 
 print 'Reloaded'
