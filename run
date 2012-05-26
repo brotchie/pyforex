@@ -1,6 +1,18 @@
 #!/bin/bash
 
-JYTHON=$HOME/bin/jython
-CLASSPATH=/home/ganon/Downloads/jforex/libs/*
+#
+# Runs jython with the classpath setup for JForex.
+#
 
-$JYTHON -J-classpath "$CLASSPATH" $@
+JYTHON=$HOME/bin/jython
+JFOREXLIBS=/home/ganon/Downloads/jforex/libs
+
+# If user hasn't set Jython location then see if it's in
+# the path.
+[ $JYTHON ] || JYTHON=$(which jython)
+if [ ! $JYTHON ] || [ ! -e $JYTHON ]; then
+    echo "Cannot find jython executable. Ensure jython is in the PATH or set the JYTHON variable in $0."
+    exit 1
+fi
+
+$JYTHON -J-classpath "$JFOREXLIBS/*" $@
