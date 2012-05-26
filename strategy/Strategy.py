@@ -1,5 +1,5 @@
 """
-Exapmle strategy script for the JForex Jython
+Example strategy script for the JForex Jython
 strategy interface.
 
 """
