@@ -1,4 +1,4 @@
-= Write Dukascopy JForex trading strategies in Jython
+# Write Dukascopy JForex trading strategies in Jython
 
 The provided Strategy class implements the Dukascopy IStrategy
 interface, proxying method calls through to a strategy
